@@ -6,14 +6,20 @@
 }
 
 body {
+    width: 100%;
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Poppins', sans-serif;
+
 }
 
 /* -----------header part css----------- */
 header {
     width: 1200px;
     margin: 87px auto 69px;
+}
+
+.toggle {
+    display: none;
 }
 
 .nav-container {
@@ -29,7 +35,11 @@ header {
     color: #3A3A3A;
 }
 
-.menu a {
+.menu-container {
+    display: flex;
+}
+
+.menu-container a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -61,7 +71,7 @@ header {
     font-weight: 600;
 }
 
-.hero-desc a {
+.button {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
@@ -75,14 +85,15 @@ header {
 
 .hero-img {
     background-image: url(../images/circle-design.svg);
-    background-size: cover;
     background-repeat: no-repeat;
     padding: 30px;
 }
 
+/* --------Logo box part---------  */
 .logo-box {
     width: 1110px;
-    margin: 36px auto;
+    margin: 0 auto;
+
 
 }
 
@@ -94,6 +105,105 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 36px 0px;
+    padding: 36px 0px;
+}
 
+/* ------------Popular Collection---------------  */
+.popular-collection {
+    width: 1047px;
+    margin: 100px auto;
+}
+
+.popular-collection a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #E02C6D;
+    float: right;
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.item {
+    padding: 17px 14px;
+    box-shadow: 5px 5px 10px 10px rgb(238, 233, 233);
+    border-radius: 10px;
+}
+
+.item h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.item h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.item p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+    ;
+
+}
+
+.item-rating {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item-rating span {
+    color: gold;
+}
+
+.item-rating p {
+    color: #5E6366;
+    margin-left: 10px;
+}
+
+/* ---------Featured--------  */
+
+.featured {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.featured-image {
+    margin-right: 96px;
+}
+
+/* ----------Footer--------- */
+
+footer {
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+    display: inline-block;
+    padding: 20px;
 }
